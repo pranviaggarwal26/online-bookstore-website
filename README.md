@@ -64,6 +64,3 @@ Through this project, I practised:
 
 BookNest is a front-end practice project. It demonstrates basic e-commerce functionality. It does not process real payments or place actual orders.
 
----
-
-**Developed as part of my Web Development Projects.**
