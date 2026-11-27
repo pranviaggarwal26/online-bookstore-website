@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookNest | Your Online Bookstore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <a href="#" class="logo">Book<span>Nest.</span></a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#books">Explore Books</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <a href="#cart" class="cart-button">
+            🛒 Cart <span id="cart-count">0</span>
+        </a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="eyebrow">A WORLD OF STORIES AWAITS</p>
+            <h1>Find your next<br><span>favorite read.</span></h1>
+            <p class="hero-description">
+                Discover stories, explore ideas, and find books
+                that inspire you. Your next chapter starts here.
+            </p>
+            <a href="#books" class="hero-button">Explore Collection →</a>
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=900"
+                alt="A cozy library filled with books">
+        </div>
+    </section>
+
+    <!-- Books Section -->
+    <main class="main-container" id="books">
+
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">HANDPICKED FOR YOU</p>
+                <h2>Explore our collection</h2>
+                <p class="section-subtitle">Find something wonderful to read.</p>
+            </div>
+        </div>
+
+        <!-- Search -->
+        <div class="search-container">
+            <span>⌕</span>
+            <input
+                type="text"
+                id="search-input"
+                placeholder="Search by book title or author...">
+        </div>
+
+        <!-- Category Filters -->
+        <div class="category-filters" id="category-filters">
+            <button class="filter-btn active" data-category="All">All Books</button>
+            <button class="filter-btn" data-category="Fiction">Fiction</button>
+            <button class="filter-btn" data-category="Technology">Technology</button>
+            <button class="filter-btn" data-category="Self-Help">Self-Help</button>
+            <button class="filter-btn" data-category="Business">Business</button>
+            <button class="filter-btn" data-category="Science">Science</button>
+        </div>
+
+        <!-- Book Count -->
+        <p class="book-count" id="book-count">Showing 15 books</p>
+
+        <!-- Book Cards -->
+        <div class="books-grid" id="books-grid"></div>
+
+    </main>
+
+    <!-- Shopping Cart -->
+    <section class="cart-section" id="cart">
+        <div class="cart-heading">
+            <div>
+                <p class="eyebrow">YOUR SELECTED READS</p>
+                <h2>Your Shopping Cart</h2>
+            </div>
+            <span class="cart-heading-icon">🛍️</span>
+        </div>
+
+        <div class="cart-layout">
+            <div class="cart-items" id="cart-items">
+                <div class="empty-cart">
+                    <div>📚</div>
+                    <h3>Your cart is empty</h3>
+                    <p>Looks like you haven't added any books yet.</p>
+                    <a href="#books">Explore Books</a>
+                </div>
+            </div>
+
+            <div class="cart-summary">
+                <h3>Order Summary</h3>
+
+                <div class="summary-row">
+                    <span>Items</span>
+                    <span id="summary-items">0</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="subtotal">₹0</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Delivery</span>
+                    <span id="delivery">₹0</span>
+                </div>
+
+                <div class="summary-divider"></div>
+
+                <div class="summary-row total-row">
+                    <span>Total Amount</span>
+                    <span id="total">₹0</span>
+                </div>
+
+                <button id="checkout-btn" class="checkout-btn" disabled>
+                    Place Order →
+                </button>
+
+                <p class="secure-note">A simple demo checkout experience</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about-section" id="about">
+        <h2>Stories worth discovering.</h2>
+        <p>
+            BookNest is your little corner of the internet for discovering
+            books, exploring new ideas, and finding your next great read.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <a href="#" class="logo">Book<span>Nest.</span></a>
+        <p>Made for the love of reading. © <span id="year"></span> BookNest.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
